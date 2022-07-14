@@ -13,7 +13,9 @@ local count = 0 -- A nice little count on the display.
 local function process()
   while true do
     -- Attempt to pick up 1024 items (16 stacks) from below the turtle.
-    local success = false
+    
+    -- useless pr but TOUCHIE
+    local success = true
     for i=1,16 do
       if turtle.suckDown(64) then
         success = true
